@@ -1,0 +1,51 @@
+﻿<html>
+<head>
+<meta charset="utf-8">
+<title>Greeting Message By TwelfthDoctor1</title>
+
+<style type="text/css">
+html, body {
+  overflow: hidden;
+ 
+}
+
+@font-face {
+  font-family: P22 Underground;
+  src: url(fonts/P22Underground.ttf);
+}
+
+#DispTitle {
+  user-select:none;
+  color: #FFFFFF;
+  font-family: P22 Underground; 
+  font-size: 2em;
+  background-color: rgba(1,1,1,0.01);
+}
+
+</style>
+
+</head>
+<body align="center">
+    <div id="widget">
+	  <spam id="DispTitle"><script>
+		var myDate = new Date();
+		var hrs = myDate.getHours();
+		var Name = 'TwelfthDoctor1'
+		var greet;
+
+		if (hrs < 12)
+			greet = 'Good Morning';
+		else if (hrs >= 12 && hrs <= 17)
+			greet = 'Good Afternoon';
+		else if (hrs >= 17 && hrs <= 20)
+			greet = 'Good Evening';
+		else if (hrs >= 20 && hrs <= 24)
+			greet = 'Good Night';
+		 
+		
+		document.write('<b> '+ greet +', '+Name+'</b>');
+	  </script>
+	  </spam>
+	 </div>
+</body>
+</html>
